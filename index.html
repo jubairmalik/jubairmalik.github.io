@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jubair Ibn Malik Rifat — CS & Computational Biology</title>
+  <meta name="description" content="Personal website of Jubair Ibn Malik Rifat — PhD student focusing on deep learning for computational biology and single‑cell/spatial omics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e14; --fg:#eaeef8; --muted:#a9b1c3; --brand:#6aa1ff; --card:#121723;
+      --accent:#7bd389; --link:#89b4fa; --shadow: rgba(0,0,0,.25);
+      --maxw: 1000px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--fg); background:radial-gradient(1200px 600px at 80% -10%,rgba(106,161,255,.15),transparent), var(--bg);}    
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(11,14,20,.7); border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{max-width:var(--maxw); margin:0 auto; display:flex; align-items:center; gap:16px; padding:14px 18px}
+    .brand{font-weight:800; letter-spacing:.2px}
+    .nav a{color:var(--fg); opacity:.9}
+    .nav-links{margin-left:auto; display:flex; flex-wrap:wrap; gap:14px}
+    /* Hero */
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 18px}
+    .hero{display:grid; grid-template-columns:1fr; gap:18px; padding:38px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); box-shadow:0 10px 30px var(--shadow); border-radius:18px; padding:22px}
+    .hero h1{font-size:clamp(28px,4vw,40px); margin:0 0 6px}
+    .hero p{color:var(--muted); margin:6px 0}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .tag{font-size:13px; padding:6px 10px; border-radius:999px; background:rgba(123,211,137,.15); color:var(--accent); border:1px solid rgba(123,211,137,.35)}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06); color:var(--fg); text-decoration:none}
+    .btn.primary{background:linear-gradient(180deg,rgba(106,161,255,.3),rgba(106,161,255,.15)); border-color:rgba(106,161,255,.45)}
+    /* Sections */
+    section{padding:22px 0}
+    h2{font-size:clamp(20px,3vw,26px); margin:8px 0 14px}
+    .list{display:grid; gap:12px}
+    .item{padding:14px; border-radius:14px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.04)}
+    .item small{color:var(--muted)}
+    .grid-2{display:grid; grid-template-columns:1fr; gap:16px}
+    @media (min-width:860px){
+      .hero{grid-template-columns:1.4fr .6fr}
+      .grid-2{grid-template-columns:1fr 1fr}
+    }
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.08); margin-top:34px}
+    .footer-inner{max-width:var(--maxw); margin:0 auto; padding:20px 18px; color:var(--muted); display:flex; align-items:center; gap:10px; justify-content:space-between}
+    .social{display:flex; gap:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">Jubair Ibn Malik Rifat</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>Hi, I’m Jubair — PhD student in CS (Computational Biology)</h1>
+        <p>
+          I build machine learning methods for biological data, with a focus on single‑cell and spatial omics, cancer biology, and multimodal integration. I enjoy turning large, noisy datasets into clear, testable insights.
+        </p>
+        <div class="tags">
+          <span class="tag">Single‑cell / Spatial Omics</span>
+          <span class="tag">Graph Contrastive Learning</span>
+          <span class="tag">Deep Learning for Bio</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="assets/Jubair_Rifat_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Latest News</h2>
+        <ul class="list" aria-label="Latest news">
+          <li class="item"><strong>Apr 2025</strong>: Our paper in <em>Scientific Reports</em> on single‑cell multi‑omics for CRC published. <a href="https://www.nature.com/articles/s41598-025-97476-4" target="_blank" rel="noopener">Read</a></li>
+          <li class="item"><strong>Oct 2024</strong>: Poster at RSGDREAM 2024 on scRNA‑seq clustering with graph debiased contrastive learning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="grid-2">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I’m a PhD student in Computer Science & Engineering. My research lies at the intersection of machine learning and computational biology, including biologically‑informed neural architectures, graph learning, and interpretable models for precision medicine.
+        </p>
+        <p>
+          I collaborate with biologists to analyze complex datasets and generate actionable hypotheses, and I share tools and reproducible pipelines in Python and R.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Quick Links</h2>
+        <ul class="list">
+          <li class="item"><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li class="item"><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li class="item"><a href="mailto:your.email@example.com">Email</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="card">
+        <h2>Selected Publications</h2>
+        <div class="list">
+          <div class="item">
+            <strong>Identifying colorectal cancer cells using single cell multi‑omics and biological data integration</strong><br />
+            <em>Scientific Reports</em>, 2025. 
+            <a href="https://www.nature.com/articles/s41598-025-97476-4" target="_blank" rel="noopener">paper</a>
+          </div>
+          <div class="item">
+            <strong>Prediction of breast cancer from H&E stained biopsy images using CNNs with batch normalization</strong><br />
+            <em>ICCCS (IEEE)</em>, 2020. 
+            <a href="https://ieeexplore.ieee.org/abstract/document/9392689" target="_blank" rel="noopener">paper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="grid-2">
+      <div class="card">
+        <h2>Skills</h2>
+        <ul class="list">
+          <li class="item">Python (PyTorch, PyG), R (Bioconductor), scRNA‑seq & spatial omics pipelines</li>
+          <li class="item">Graph learning, contrastive learning, multimodal fusion</li>
+          <li class="item">Explainability (SHAP), survival analysis, enrichment analysis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Teaching</h2>
+        <ul class="list">
+          <li class="item">TA/Instructor: Machine Learning, Data Mining, Programming</li>
+          <li class="item">Workshops: scRNA‑seq, Spatial omics, Reproducible research</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="card">
+        <h2>Experience</h2>
+        <ul class="list">
+          <li class="item"><strong>Research Assistant</strong> — Bozdag Lab (Computational Biology). Deep learning for single‑cell & spatial omics.</li>
+          <li class="item"><strong>Projects</strong> — BioLM‑NET (multi‑omics), scGDCL (graph debiased CL), Spatial‑TME GNN.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="grid-2">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></p>
+      </div>
+      <div class="card">
+        <h2>Site Info</h2>
+        <p>This is a minimalist, fast, single‑file site designed for GitHub Pages. Edit the text above, replace links, and add your CV as <code>assets/Jubair_Rifat_CV.pdf</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="y"></span> Jubair Ibn Malik Rifat. All rights reserved.</div>
+      <div class="social">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
